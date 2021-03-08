@@ -16,7 +16,7 @@ $monk_hp = $_POST['monk'];
 $allies = [];
 
 if ($player_hp > 0) {
-    $player = new Player('主人公', $player_hp);
+    $player = new Player('勇者', $player_hp);
     $allies[] = $player;
 }
 if ($fighter_hp > 0) {
