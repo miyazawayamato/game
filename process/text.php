@@ -39,7 +39,7 @@ $enemy2 = new Enemy('ゴブリンB');
 $enemy3 = new Enemy('ゴブリンC');
 $enemies = [$enemy1, $enemy2,$enemy3];
 
-
+echo '<p class="win">ゴブリンが3体現れた！</p>';
 
 $turn = 0;
 $attackObj = new Attacks();
