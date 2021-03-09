@@ -8,7 +8,7 @@ class Attacks
         
         //攻撃する方の数
         $max = count($attackers);
-        $index = $max - 1;
+        
         for ($i = 0; $i < $max; $i++) {
             
             
@@ -18,6 +18,8 @@ class Attacks
                 
                 break;
             }
+            
+            
             
             // //受ける側のインデックス
             $be = rand(0, count($receivers) -1);
@@ -30,6 +32,7 @@ class Attacks
                 unset($receivers[$be]);
                 $receivers = array_values($receivers);
             }
+            
         }
         
         return $receivers;
